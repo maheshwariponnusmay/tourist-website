@@ -1,0 +1,548 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.hover-img:hover {
+    background-image: url('images/bg1');
+}
+
+.hover-img {
+    width: 100%;
+    height: 600px;
+    background-image: url('images/bg2');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    transition: background-image 3s ease;
+
+
+
+
+}
+
+.hover-img h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: "IBM Plex Serif";
+    font-style: italic;
+}
+
+
+.foods {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+body {
+    overflow-x: hidden;
+
+    font-family: "IBM Plex Serif";
+    font-style: italic;
+    background: #0D1B2A;
+    /* Light sunlit gradient */
+    color: #E0E1DD;
+
+}
+
+.nav2 {
+    word-spacing: 10px;
+    padding-right: 30px;
+    font-weight: 150px;
+}
+
+.navbar {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: (135deg, #1a1a1a, #333333);
+    color: #ECEFF1;
+}
+
+footer {
+    padding: 1rem;
+    background: #4d95dd;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.input-box {
+    display: none;
+}
+
+.bars-one {
+    display: none;
+}
+
+.nav2 a:hover {
+    color: #FF7043;
+    font-weight: 150px;
+}
+
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotel-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+@media screen and (min-width:300px) and (max-width: 530px) {
+
+    .nav2 {
+        width: 100%;
+        background-color: #1B2E2A;
+        left: -100vh;
+        margin-right: 20px;
+        word-spacing: 30px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        transition: left 1s ease-in-out;
+        color: #FFFFFF;
+    }
+
+    .hover-img h1 {
+        font-size: xx-large;
+    }
+
+    .full-project {
+        flex-wrap: wrap;
+    }
+
+    .about p {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .input-box:checked~.nav2 {
+        left: 0px;
+    }
+
+    .bars-one {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .nav2 a {
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .nav2 a:hover {
+        color: #FFEB3B;
+    }
+
+
+
+    .hotels {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .curosal {
+        flex-wrap: wrap;
+    }
+
+    .overall_container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        animation: slide 25s linear infinite;
+        grid-auto-flow: column;
+
+    }
+
+    .hoverpic {
+        flex-wrap: wrap;
+        grid-auto-flow: column;
+
+    }
+
+    .hover-images {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card img:hover {
+        transform: scale(1.04);
+    }
+
+    .full-heading {
+        flex-direction: column;
+    }
+
+    .quote p {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: smaller;
+        align-items: center;
+
+    }
+
+    .foods p {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .foods h2 {
+        font-size: larger;
+    }
+
+
+
+}
+
+
+.full-heading {
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.overall_container {
+    width: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    padding: 10px;
+}
+
+
+.curosal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    grid-auto-flow: column;
+    animation: slide 15s linear infinite;
+    padding: 10px;
+
+
+}
+
+.card img:hover {
+    transform: scale(1.04);
+}
+
+@keyframes slide {
+    form {
+        translate: 0px;
+    }
+
+    to {
+        translate: -600px;
+    }
+}
+
+.card div {
+    width: 250px;
+    height: 300px;
+    background-color: rgb(251, 252, 253);
+    margin: 10px;
+    color: white;
+    border-radius: 10%;
+}
+
+
+
+.full-hotel {
+    display: flex;
+    justify-content: center;
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hotel-card:hover {
+    transform: scale(1.05);
+}
+
+.about {
+    background: linear-gradient(to right, #a6c3db, #2cace7);
+    padding: 20px;
+    text-align: center;
+    background-size: 100% 100%;
+    background: fixed;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+
+
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.hover-image-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+.about-card {
+    width: 280px;
+    height: 400px;
+    background: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.about-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.about-card h3 {
+
+    font-size: 1.50rem;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+.place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.places {
+
+    background-color: #a6c3db;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    color: #0D1B2A;
+
+}
+
+
+.flip-container {
+    width: 250px;
+    height: 350px;
+    border: 8px solid whitesmoke;
+    perspective: 1000px;
+    background-color: #635f5f;
+}
+
+.flipper p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.quote {
+    padding: 2rem 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.8;
+    background-color: #054585;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
+}
+
+.quote h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: orangered;
+}
+
+.service-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.service-card {
+    width: 300px;
+    height: 420px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.service-card h3 {
+    margin: 0.8rem;
+
+    color: #003366;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.hover-images {
+    width: 330px;
+    height: 500px;
+    color: #FFF8E1;
+    text-align: center;
+    background-image: url('images/agr2');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.hover-images:hover {
+    background-image: url('images/agr\ 1');
+}
+
+.img1 {
+    background-image: url('images/fes1');
+}
+
+.img1:hover {
+    background-image: url('images/fes2');
+}
+
+.img2 {
+    background-image: url('images/art1');
+}
+
+.img2:hover {
+    background-image: url('images/art2');
+}
+
+.img3 {
+    background-image: url('images/trk1');
+}
+
+.img3:hover {
+    background-image: url('images/trk2');
+}
+
+.hoverpic {
+    width: 100%;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
